@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package go.micro.srv.sso;
+
+service Sso {
+	rpc Token(AuthRequest) returns (AuthResponse) {}
+	rpc Register(RegisterRequest) returns (RegisterResponse) {}
+	rpc SendEmail(EmailRequest) returns (EmailResponse) {}
+	rpc ForgetPassword(PasswordRequest) returns (PasswordResponse) {}
+	rpc Stream(StreamingRequest) returns (stream StreamingResponse) {}
+	rpc PingPong(stream Ping) returns (stream Pong) {}
+}
+
+message EmailRequest{
+	string email = 1;
+}
+
+message EmailResponse{
+	bool result = 1;
+}
+
+message Message {
+	string say = 1;
+}
+
+message AuthRequest {
+	string username = 1;
+	string password = 2;
+	string email = 3;
+}
+
+message AuthResponse {
+	string token = 1;
+	int64 expire = 2;
+	int64 status = 3;
+}
+
+message RegisterRequest {
+	string mobile = 1;
+	string password = 2;
+	string captcha = 3;
+	string verify = 4;
+}
+
+message RegisterResponse {
+	int64 status = 2;
+}
+
+message PasswordRequest {
+        string mobile = 1;
+        string password = 2;
+        string captcha = 3;
+        string verify = 4;
+}
+
+message PasswordResponse {
+        int64 status = 2;
+}
+
+message StreamingRequest {
+	int64 count = 1;
+}
+
+message StreamingResponse {
+	int64 count = 1;
+}
+
+message Ping {
+	int64 stroke = 1;
+}
+
+message Pong {
+	int64 stroke = 1;
+}
