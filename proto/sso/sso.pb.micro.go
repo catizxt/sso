@@ -35,6 +35,7 @@ var _ server.Option
 
 type SsoService interface {
 	Token(ctx context.Context, in *AuthRequest, opts ...client.CallOption) (*AuthResponse, error)
+	CurrentUser(ctx context.Context, in *UserRequest, opts ...client.CallOption) (*Userinfo, error)
 	Register(ctx context.Context, in *RegisterRequest, opts ...client.CallOption) (*RegisterResponse, error)
 	SendEmail(ctx context.Context, in *EmailRequest, opts ...client.CallOption) (*EmailResponse, error)
 	ForgetPassword(ctx context.Context, in *PasswordRequest, opts ...client.CallOption) (*PasswordResponse, error)
@@ -57,6 +58,16 @@ func NewSsoService(name string, c client.Client) SsoService {
 func (c *ssoService) Token(ctx context.Context, in *AuthRequest, opts ...client.CallOption) (*AuthResponse, error) {
 	req := c.c.NewRequest(c.name, "Sso.Token", in)
 	out := new(AuthResponse)
+	err := c.c.Call(ctx, req, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *ssoService) CurrentUser(ctx context.Context, in *UserRequest, opts ...client.CallOption) (*Userinfo, error) {
+	req := c.c.NewRequest(c.name, "Sso.CurrentUser", in)
+	out := new(Userinfo)
 	err := c.c.Call(ctx, req, out, opts...)
 	if err != nil {
 		return nil, err
@@ -198,6 +209,7 @@ func (x *ssoServicePingPong) Recv() (*Pong, error) {
 
 type SsoHandler interface {
 	Token(context.Context, *AuthRequest, *AuthResponse) error
+	CurrentUser(context.Context, *UserRequest, *Userinfo) error
 	Register(context.Context, *RegisterRequest, *RegisterResponse) error
 	SendEmail(context.Context, *EmailRequest, *EmailResponse) error
 	ForgetPassword(context.Context, *PasswordRequest, *PasswordResponse) error
@@ -208,6 +220,7 @@ type SsoHandler interface {
 func RegisterSsoHandler(s server.Server, hdlr SsoHandler, opts ...server.HandlerOption) error {
 	type sso interface {
 		Token(ctx context.Context, in *AuthRequest, out *AuthResponse) error
+		CurrentUser(ctx context.Context, in *UserRequest, out *Userinfo) error
 		Register(ctx context.Context, in *RegisterRequest, out *RegisterResponse) error
 		SendEmail(ctx context.Context, in *EmailRequest, out *EmailResponse) error
 		ForgetPassword(ctx context.Context, in *PasswordRequest, out *PasswordResponse) error
@@ -227,6 +240,10 @@ type ssoHandler struct {
 
 func (h *ssoHandler) Token(ctx context.Context, in *AuthRequest, out *AuthResponse) error {
 	return h.SsoHandler.Token(ctx, in, out)
+}
+
+func (h *ssoHandler) CurrentUser(ctx context.Context, in *UserRequest, out *Userinfo) error {
+	return h.SsoHandler.CurrentUser(ctx, in, out)
 }
 
 func (h *ssoHandler) Register(ctx context.Context, in *RegisterRequest, out *RegisterResponse) error {

@@ -167,6 +167,14 @@ func (u *User) Verify(p string) bool {
 	return u.GetPasswordHash(p) == u.PasswordHash
 }
 
+func (u *User) GetUsername() {
+    engine, err := u.GetDb()
+    	if err != nil {
+    		fmt.Println(err)
+    	}
+    engine.Where("email = ?", u.Email).Get(u)
+}
+
 // 生成jwt
 func (u *User) GenerateToken() (token string, expire time.Time, err error) {
 	algorithm :=  jwt.HmacSha256("cicdi")

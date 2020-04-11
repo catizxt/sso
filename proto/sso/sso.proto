@@ -4,11 +4,23 @@ package go.micro.srv.sso;
 
 service Sso {
 	rpc Token(AuthRequest) returns (AuthResponse) {}
+	rpc CurrentUser(UserRequest) returns (Userinfo) {}
 	rpc Register(RegisterRequest) returns (RegisterResponse) {}
 	rpc SendEmail(EmailRequest) returns (EmailResponse) {}
 	rpc ForgetPassword(PasswordRequest) returns (PasswordResponse) {}
 	rpc Stream(StreamingRequest) returns (stream StreamingResponse) {}
 	rpc PingPong(stream Ping) returns (stream Pong) {}
+}
+
+message UserRequest{
+	string msg = 1;
+}
+
+message Userinfo{
+	string name = 1 ;
+	string avatar = 2;
+	string email = 3;
+	string userid = 4;
 }
 
 message EmailRequest{
@@ -27,12 +39,15 @@ message AuthRequest {
 	string username = 1;
 	string password = 2;
 	string email = 3;
+	string type = 4;
 }
 
 message AuthResponse {
 	string token = 1;
-	int64 expire = 2;
-	int64 status = 3;
+	string status = 2;
+	string type = 3;
+	string currentAuthority = 4;
+	string email = 5;
 }
 
 message RegisterRequest {
@@ -40,6 +55,7 @@ message RegisterRequest {
 	string password = 2;
 	string captcha = 3;
 	string verify = 4;
+	string username = 5;
 }
 
 message RegisterResponse {

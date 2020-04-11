@@ -15,24 +15,41 @@ type Sso struct{}
 
 // Call is a single request handler called via client.Auth or the generated client code
 func (e *Sso) Token(ctx context.Context, req *sso.AuthRequest, rsp *sso.AuthResponse) error {
-	rsp.Status = 0
+	rsp.Status = "false"
 	u := models.User{
 		Email: req.Username,
 	}
 	if !u.Verify(req.Password) {
 		err := errors.New("账号或者密码错误")
-		return err
+		fmt.Println(err)
+		return nil
 	}
-	token, expire, err := u.GenerateToken()
+	token, _, err := u.GenerateToken()
 	if err != nil {
-		return err
+		return nil
 	}
-	rsp.Expire = expire.Unix()
+	//rsp.Expire = expire.Unix()
 	rsp.Token = token
-
-	rsp.Status = 1
+    rsp.Type = req.Type
+    rsp.CurrentAuthority = u.Role
+	rsp.Status = "ok"
+	rsp.Email = req.Username
 	return nil
 }
+
+func (e *Sso) CurrentUser(ctx context.Context,req *sso.UserRequest,rsp *sso.Userinfo) error{
+    u := models.User{
+        Email: req.Msg,
+    }
+    u.GetUsername();
+    rsp.Name = u.Username
+    //rsp.Name = "hello"
+    rsp.Avatar = "https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png"
+    rsp.Email = req.Msg
+    rsp.Userid = "00000001"
+    return nil
+}
+
 
 // Call is a single request handler called via client.Register or the generated client code
 func (e *Sso) Register(ctx context.Context, req *sso.RegisterRequest, rsp *sso.RegisterResponse) error {
@@ -47,6 +64,7 @@ func (e *Sso) Register(ctx context.Context, req *sso.RegisterRequest, rsp *sso.R
 
 	user := models.User{
 	    Email : req.Mobile,
+	    Username : req.Username,
 		Role : "user",
 		Status:   1,
 	}
