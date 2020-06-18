@@ -179,7 +179,10 @@ func (u *User) GetUsername() {
 func (u *User) GenerateToken() (token string, expire time.Time, err error) {
 	algorithm :=  jwt.HmacSha256("cicdi")
 	claims := jwt.NewClaim()
-	expire = time.Now().Add(time.Second*time.Duration(utils.Config.Expire*1000000))
+	var cstSh, _ = time.LoadLocation("Asia/Shanghai")
+	expire = time.Now().Add(time.Second*time.Duration(utils.Config.Expire)).In(cstSh)
+	//fmt.Println(time.Now().In(cstSh))
+	//fmt.Println(expire)
 	claims.Set("Username", u.Email)
 	claims.Set("Role", u.Role)
 	claims.SetTime("exp", expire)

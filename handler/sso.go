@@ -2,8 +2,10 @@ package handler
 
 import (
 	"context"
+	"time"
 	"github.com/micro/go-log"
 	"fmt"
+	"github.com/cicdi-go/jwt"
 	sso "github.com/cicdi-go/sso/proto/sso"
 	models "github.com/cicdi-go/sso/src/models"
 	"errors"
@@ -38,8 +40,43 @@ func (e *Sso) Token(ctx context.Context, req *sso.AuthRequest, rsp *sso.AuthResp
 }
 
 func (e *Sso) CurrentUser(ctx context.Context,req *sso.UserRequest,rsp *sso.Userinfo) error{
+    if len(req.Msg) == 0 {
+	fmt.Println("没有token")
+	return nil	
+     }
+  
+	algorithm :=  jwt.HmacSha256("cicdi")
+        claims, err := algorithm.Decode(req.Msg)					
+   
+   if err != nil {
+         fmt.Println(err)
+         return nil
+     }
+
+    //timeTemplate1 := "2006-01-02 15:04:05 +0800 CST"
+    exp,_ := claims.GetTime("exp")
+ 
+    var cstSh, _ = time.LoadLocation("Asia/Shanghai")   
+    exp  = exp.In(cstSh)
+    //exp = fmt.Sprintf("%v",exp)
+    //exp,err := time.Parse("2006-01-02 15:04:05", exp)
+    fmt.Println(exp)
+    timen := time.Now().In(cstSh)
+    //timen = fmt.Sprintf("%v",timen)
+    //timen,err := time.Parse("2006-01-02 15:04:05", timen)
+   
+    fmt.Println(timen)
+    
+    if exp.Before(timen){
+       fmt.Println("token过期")
+       return nil
+    }
+     
+    username,_ := claims.Get("Username")
+    email := fmt.Sprintf("%s",username)
+    //fmt.Println(email)
     u := models.User{
-        Email: req.Msg,
+        Email: email,
     }
     u.GetUsername();
     rsp.Name = u.Username
