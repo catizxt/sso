@@ -144,14 +144,14 @@ func (e *Sso) ForgetPassword(ctx context.Context, req *sso.PasswordRequest, rsp 
 //发送邮件验证函数
 func (e * Sso) SendEmail(ctx context.Context, req *sso.EmailRequest, rsp *sso.EmailResponse) (error){
     	// 发送激活邮件
-    	config := `{"username":"778439511@qq.com","password":"uwjrktowawmjbajb","host":"smtp.qq.com","port":587}`
+    	config := `{"username":"xxxxxxxxx@qq.com","password":"xxxxxxxxxxxxxxxxxxx","host":"smtp.qq.com","port":587}`
     	temail := utils.NewEMail(config)
 
     	//指定收件人邮箱地址
     	temail.To = []string{req.Email}
 
     	//指定发件人的邮箱地址
-    	temail.From = "778439511@qq.com"
+    	temail.From = "xxxxxxxxx@qq.com"
 
     	//指定邮件的标题
     	temail.Subject = "网站注册用户验证码"
