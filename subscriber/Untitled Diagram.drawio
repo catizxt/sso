@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T13:52:35.776Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="pM1mAl9lYtuR2OfkQw1-" version="16.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-09T13:57:24.777Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="NeE02xFGQ6HYcTJd-2K8" version="16.6.6" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="948" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -189,7 +189,7 @@
         <mxCell id="VyQ1B00feMUYjvhqdVCF-55" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="190" y="900" width="363.5" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VyQ1B00feMUYjvhqdVCF-56" value="$$Q(o^{t},a^{t}) = \sum_{i=1}^{n}Q_{i}^{t}(o_{i}^{t},a_{i}^{t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-56" value="$$Q^{t}(o^{t},a^{t}) = \sum_{i=1}^{n}Q_{i}^{t}(o_{i}^{t},a_{i}^{t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="309" y="940" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-57" value="&lt;b&gt;VDN混合网络&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
@@ -215,8 +215,8 @@
         <mxCell id="VyQ1B00feMUYjvhqdVCF-70" value="$$target\_ Q_{n}^{t}$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="434" y="710" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="VyQ1B00feMUYjvhqdVCF-76" value="$$target\_Q(o^{t+1},a^{‘t+1}) = \sum_{i=1}^{n}target\_Q_{i}^{t}(o_{i}^{t+1},a_{i}^{’t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
-          <mxGeometry x="298" y="990" width="150" height="40" as="geometry" />
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-76" value="$$target\_Q^{t}(o^{t+1},a^{&#39;t}) = \sum_{i=1}^{n}target\_Q_{i}^{t}(o_{i}^{t+1},a_{i}^{’t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
+          <mxGeometry x="298" y="990" width="152" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-80" value="$$(o_{n}^{t},o_{n}^{t+1},a_{n}^{t},h_{n}^{t-1},h_{n}^{t})$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="500" y="535" width="150" height="40" as="geometry" />
@@ -240,8 +240,8 @@
         <mxCell id="VyQ1B00feMUYjvhqdVCF-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;" edge="1" parent="1" source="VyQ1B00feMUYjvhqdVCF-84" target="VyQ1B00feMUYjvhqdVCF-55">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="260" y="890" />
-              <mxPoint x="260" y="890" />
+              <mxPoint x="265" y="880" />
+              <mxPoint x="265" y="880" />
             </Array>
           </mxGeometry>
         </mxCell>
