@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T14:06:10.345Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="u-LzyjxlT2MO9AZ24YrN" version="16.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-09T14:08:56.556Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="eYGHD2D5Qp8xmP-owsEE" version="16.6.6" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="948" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -125,11 +125,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="VyQ1B00feMUYjvhqdVCF-258" value="$$a_{1}^{&#39;t}$$" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#1A1A1A;" vertex="1" connectable="0" parent="VyQ1B00feMUYjvhqdVCF-101">
-          <mxGeometry x="0.1543" relative="1" as="geometry">
-            <mxPoint y="8" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-37" value="评估网络" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="65" y="640" width="70" height="35" as="geometry" />
         </mxCell>
@@ -177,11 +172,6 @@
             <Array as="points">
               <mxPoint x="675" y="720" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VyQ1B00feMUYjvhqdVCF-257" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;comic sans ms&amp;#34; ; background-color: rgb(248 , 249 , 250)&quot;&gt;$$a_{n}^{&#39;t}$$&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Helvetica;fontColor=#1A1A1A;" vertex="1" connectable="0" parent="VyQ1B00feMUYjvhqdVCF-105">
-          <mxGeometry x="0.1088" y="-2" relative="1" as="geometry">
-            <mxPoint y="8" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-132" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#B9E0A5;opacity=70;entryX=1;entryY=0.68;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VyQ1B00feMUYjvhqdVCF-53" target="VyQ1B00feMUYjvhqdVCF-84">
@@ -431,6 +421,12 @@
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-251" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;软更新&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="607.5" y="635" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-260" value="$$a_{1}^{&#39;t}$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=none;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="149" y="712" width="47" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-264" value="$$a_{n}^{&#39;t}$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=none;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="575" y="713" width="47" height="13" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
