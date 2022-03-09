@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T14:02:46.477Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="6bo_pW5-iGQ4TXvDRjRV" version="16.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-09T14:03:35.711Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="f48LAI_RCCTkIQ7QWCKf" version="16.6.6" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="948" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -235,7 +235,7 @@
         <mxCell id="VyQ1B00feMUYjvhqdVCF-70" value="$$target\_ Q_{n}^{t}$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="434" y="710" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="VyQ1B00feMUYjvhqdVCF-76" value="$$target\_Q^{t}(o^{t+1},a^{&#39;t}) = \sum_{i=1}^{n}target\_Q_{i}^{t}(o_{i}^{t+1},a_{i}^{’t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-76" value="$$target\_Q^{t}(o^{t+1},a^{&#39;t}) = \sum_{i=1}^{n}target\_Q_{i}^{t}(o_{i}^{t+1},a_{i}^{’t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="298" y="990" width="152" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-80" value="$$(o_{n}^{t},o_{n}^{t+1},a_{n}^{t},h_{n}^{t-1},h_{n}^{t})$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
