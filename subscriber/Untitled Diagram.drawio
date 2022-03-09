@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T09:56:47.087Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="Lg9FFyUQ4Nqc7B35ZjWT" version="16.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-09T10:07:37.771Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="yYCJsDCB7RP7fbVax9AD" version="16.6.6" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="948" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -78,6 +78,33 @@
         </mxCell>
         <mxCell id="VyQ1B00feMUYjvhqdVCF-50" value="$$(o_{1}^{t},o_{1}^{t+1},a_{1}^{t},h_{1}^{t-1},h_{1}^{t})$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="120" y="530" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-51" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="590" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-52" value="目标网络" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="640" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-53" value="评估网络" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="640" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-54" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;智能体n决策器&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="605" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-55" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="850" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-56" value="$$Q(o^{t},a^{t}) = \sum_{i=1}^{n}Q_{i}^{t}(o_{i}^{t},a_{i}^{t})&lt;br&gt;$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=14;shadow=0;sketch=0;glass=0;strokeColor=#F7F7F7;" vertex="1" parent="1">
+          <mxGeometry x="288" y="890" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-57" value="&lt;b&gt;VDN混合网络&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="308" y="860" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-59" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#1A1A1A;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="328" y="740" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VyQ1B00feMUYjvhqdVCF-60" value="" style="shape=cross;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;fontSize=14;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="338" y="750" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
