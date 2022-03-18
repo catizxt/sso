@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T05:35:34.742Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="mvbA_eGmbqjzPRgb1P7m" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T05:46:51.450Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="N9BumsBzqV4YPy9AEnSS" version="17.0.0" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -226,6 +226,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="_yVAc_mF-bW11WZnQABi-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="_yVAc_mF-bW11WZnQABi-19" target="_yVAc_mF-bW11WZnQABi-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="_yVAc_mF-bW11WZnQABi-19" value="策略网络&lt;br&gt;参数：" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="164" y="668" width="78.75" height="33" as="geometry" />
         </mxCell>
@@ -233,10 +236,7 @@
           <mxGeometry x="191.5" y="678" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_yVAc_mF-bW11WZnQABi-21" value="策略网络&lt;br&gt;参数：" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="162.25" y="740" width="78.75" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="_yVAc_mF-bW11WZnQABi-22" value="$$\theta&#39;_{i}$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="192" y="749" width="60" height="30" as="geometry" />
+          <mxGeometry x="164.25" y="740" width="78.75" height="33" as="geometry" />
         </mxCell>
         <mxCell id="_yVAc_mF-bW11WZnQABi-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=1.011;entryY=0.13;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_yVAc_mF-bW11WZnQABi-23" target="_yVAc_mF-bW11WZnQABi-8">
           <mxGeometry relative="1" as="geometry" />
