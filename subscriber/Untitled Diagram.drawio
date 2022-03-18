@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T05:46:51.450Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="N9BumsBzqV4YPy9AEnSS" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T05:48:21.067Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="gfC_4NkqXptEUjMa7oYB" version="17.0.0" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -260,6 +260,9 @@
         </mxCell>
         <mxCell id="_yVAc_mF-bW11WZnQABi-37" value="$$\theta_{i}$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="213" y="636.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_yVAc_mF-bW11WZnQABi-44" value="软更新" style="text;html=1;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="181" y="710" width="46" height="15" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
