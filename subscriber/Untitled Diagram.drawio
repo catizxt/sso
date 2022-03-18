@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T06:26:34.060Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="zmjrcnmq9eRsMD0aShgb" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T06:26:57.703Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="5jlAnuuGh0aWKxCRUW8e" version="17.0.0" type="github">
   <diagram id="8LqcWbh-K-a9OpP2giRa" name="Page-1">
     <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -329,8 +329,8 @@
         <mxCell id="_yVAc_mF-bW11WZnQABi-70" value="更新" style="text;html=1;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="634.25" y="644" width="34" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="_yVAc_mF-bW11WZnQABi-71" value="$$\theta_{i}$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="641" y="636.5" width="60" height="30" as="geometry" />
+        <mxCell id="_yVAc_mF-bW11WZnQABi-71" value="$$\omega_{i}$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="643" y="636.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_yVAc_mF-bW11WZnQABi-72" value="软更新" style="text;html=1;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="609" y="710" width="46" height="15" as="geometry" />
